@@ -6,11 +6,10 @@
 /**
  * Colors.
  */
-$navyblue: #102e38;
+$twitblue: #3C93C9;
 $greensleaves: #607b52;
 $orange: #e0b16b;
-$takemylove: #ff5f4b;
-$ruby: #92161e;
+$ruby: #cc181e;
 
 /**
  * Fonts.
@@ -37,7 +36,7 @@ html {
 }
 
 body {
-	background: $orange;
+	background: url(../img/pixel_weave.png) repeat;
 	font-family: 'Josefin Sans', sans-serif;
 	padding: 120px 0 0;
 }
@@ -63,6 +62,10 @@ h2 {
 	font-size: 1.1em;
 }
 
+a {
+	text-decoration: none;
+}
+
 .toolbar {
   @include box-shadow(5px 0 5px #000);
 	@include background-image(linear-gradient(top, #000000 0%, #232223 98%));
@@ -75,7 +78,7 @@ h2 {
 }
 
 .page-title {
-	color: lighten($greensleaves, 20%);
+	color: darken(#fff, 10%);
 	text-align: center;
 	font-size: 1.5em;
 }
@@ -89,7 +92,7 @@ h2 {
 
 .media {
 	@include transition(all 0.5s linear);
-	background: darken(#fff, 10%);
+	background: darken(#fff, 2%);
   color: lighten(#000, 10%);
 	display: flex;
 	flex: 1 1 200px;
@@ -98,8 +101,35 @@ h2 {
 	opacity: .8;
   padding: 5px;
   &:hover {
-  	@include box-shadow(2px 2px 5px $takemylove);
+  	@include box-shadow(2px 2px 5px $ruby);
   	color: lighten(#000, 2%);
   	opacity: 1;
   }
+}
+
+.media-details {
+	margin: 0;
+	padding: 0;
+}
+
+.media-detail {
+	list-style: none;
+	margin: 10px 0;
+}
+
+.media-link {
+	color: blue;
+}
+
+.media-link:before {
+	margin: 10px 10px 10px 0;
+	vertical-align: -2px;
+}
+
+.media-link-tw:before {
+	color: $twitblue;
+}
+
+.media-link-yt:before {
+	color: $ruby;
 }

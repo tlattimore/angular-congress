@@ -16,24 +16,24 @@
 /**
  * Styles.
  */
-/* line 35, ../sass/app.scss */
+/* line 34, ../sass/app.scss */
 html {
   font-size: 100%;
 }
 
-/* line 39, ../sass/app.scss */
+/* line 38, ../sass/app.scss */
 body {
-  background: #e0b16b;
+  background: url(../img/pixel_weave.png) repeat;
   font-family: 'Josefin Sans', sans-serif;
   padding: 120px 0 0;
 }
 
-/* line 46, ../sass/app.scss */
+/* line 45, ../sass/app.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 50, ../sass/app.scss */
+/* line 49, ../sass/app.scss */
 [data-icon]:before {
   font-family: 'angular-congress';
   content: attr(data-icon);
@@ -46,12 +46,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 62, ../sass/app.scss */
+/* line 61, ../sass/app.scss */
 h2 {
   font-size: 1.1em;
 }
 
-/* line 66, ../sass/app.scss */
+/* line 65, ../sass/app.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 69, ../sass/app.scss */
 .toolbar {
   -webkit-box-shadow: 5px 0 5px black;
   -moz-box-shadow: 5px 0 5px black;
@@ -69,14 +74,14 @@ h2 {
   z-index: 500;
 }
 
-/* line 77, ../sass/app.scss */
+/* line 80, ../sass/app.scss */
 .page-title {
-  color: #93ae85;
+  color: #e6e6e6;
   text-align: center;
   font-size: 1.5em;
 }
 
-/* line 83, ../sass/app.scss */
+/* line 86, ../sass/app.scss */
 .media-container {
   display: flex;
   flex-wrap: wrap;
@@ -84,13 +89,13 @@ h2 {
   justify-content: space-between;
 }
 
-/* line 90, ../sass/app.scss */
+/* line 93, ../sass/app.scss */
 .media {
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
-  background: #e6e6e6;
+  background: #fafafa;
   color: #1a1a1a;
   display: flex;
   flex: 1 1 200px;
@@ -99,11 +104,44 @@ h2 {
   opacity: .8;
   padding: 5px;
 }
-/* line 100, ../sass/app.scss */
+/* line 103, ../sass/app.scss */
 .media:hover {
-  -webkit-box-shadow: 2px 2px 5px #ff5f4b;
-  -moz-box-shadow: 2px 2px 5px #ff5f4b;
-  box-shadow: 2px 2px 5px #ff5f4b;
+  -webkit-box-shadow: 2px 2px 5px #cc181e;
+  -moz-box-shadow: 2px 2px 5px #cc181e;
+  box-shadow: 2px 2px 5px #cc181e;
   color: #050505;
   opacity: 1;
+}
+
+/* line 110, ../sass/app.scss */
+.media-details {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 115, ../sass/app.scss */
+.media-detail {
+  list-style: none;
+  margin: 10px 0;
+}
+
+/* line 120, ../sass/app.scss */
+.media-link {
+  color: blue;
+}
+
+/* line 124, ../sass/app.scss */
+.media-link:before {
+  margin: 10px 10px 10px 0;
+  vertical-align: -2px;
+}
+
+/* line 129, ../sass/app.scss */
+.media-link-tw:before {
+  color: #3c93c9;
+}
+
+/* line 133, ../sass/app.scss */
+.media-link-yt:before {
+  color: #cc181e;
 }
