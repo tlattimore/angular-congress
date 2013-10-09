@@ -63,6 +63,8 @@ h2 {
 }
 
 a {
+	color: blue;
+	border-bottom: 1px solid inherit;
 	text-decoration: none;
 }
 
@@ -76,6 +78,27 @@ a {
 	width: 100%;
 	z-index: 500;
 }
+
+.info {
+	color: #fff;
+	top: 25px;
+	left: 25px;
+	position: absolute;
+}
+
+.info-box {
+	color: gray;
+	background: darken(#fff, 10%);
+  display: none;
+  padding: 10px
+}
+
+ .info:hover {
+  .info-box {
+    display: block
+	}
+}
+
 
 .page-title {
 	color: darken(#fff, 10%);
@@ -116,10 +139,6 @@ a {
 .media-detail {
 	list-style: none;
 	margin: 10px 0;
-}
-
-.media-link {
-	color: blue;
 }
 
 .media-link:before {
