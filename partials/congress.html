@@ -1,12 +1,14 @@
-<h1>Congress</h1>
+<div class="toolbar">
+  <h1 class="page-title">Current United States Congress</h1>
+</div>
 
-<div class="blog media" ng-repeat="member in members">
-  <div class="member">
-    <pre>{{member.person.name}}</pre>
-  	<pre>{{member.party}}</pre>
-  	<pre>{{member.startdate}} - {{member.enddate}}</pre>
-    <pre>{{member.person.twitterid}}</pre>
-    <pre>{{member.person.youtubeid}}</pre>
-  </div>
-  <hr />
+<div class="media-container">
+	<div class="media" ng-repeat="member in members">
+	  <div class="media-component">
+	    <h2>{{member.person.name}}</h2>
+	  	<span class="media-detail">{{member.startdate}} - {{member.enddate}}</span>
+	    <span class="media-detail">{{member.person.twitterid}}</span>
+	    <span class="media-detail">{{member.person.youtubeid}}</span>
+	  </div>
+	</div>
 </div>

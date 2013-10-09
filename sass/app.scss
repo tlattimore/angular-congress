@@ -1,0 +1,68 @@
+@import "compass";
+@import "breakpoint";
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+
+/**
+ * Colors.
+ */
+$navyblue: #102e38;
+$greensleaves: #607b52;
+$orange: #e0b16b;
+$takemylove: #ff5f4b;
+$ruby: #92161e;
+
+html {
+	font-size: 100%;
+}
+
+body {
+	background: $navyblue;
+	font-family: 'Julius Sans One', sans-serif;
+	padding: 120px 0 0;
+}
+
+// Border box all the things!
+* {
+	box-sizing: border-box;
+}
+
+.toolbar {
+  @include box-shadow(5px 0 5px #000);
+	@include background-image(linear-gradient(top, #000000 0%, #232223 98%));
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 500;
+}
+
+.page-title {
+	color: lighten($greensleaves, 20%);
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.media-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.media {
+	@include transition(all 0.5s linear);
+	background: darken(#fff, 10%);
+  color: lighten(#000, 10%);
+	display: flex;
+	flex: 1 1 200px;
+	flex-direction: column;
+	margin: 10px;
+	opacity: .8;
+  padding: 5px;
+  &:hover {
+  	@include box-shadow(2px 2px 5px $takemylove);
+  	color: lighten(#000, 2%);
+  	opacity: 1;
+  }
+}

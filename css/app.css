@@ -1,0 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+/**
+ * Colors.
+ */
+/* line 14, ../sass/app.scss */
+html {
+  font-size: 100%;
+}
+
+/* line 18, ../sass/app.scss */
+body {
+  background: #102e38;
+  font-family: 'Julius Sans One', sans-serif;
+  padding: 120px 0 0;
+}
+
+/* line 25, ../sass/app.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 29, ../sass/app.scss */
+.toolbar {
+  -webkit-box-shadow: 5px 0 5px black;
+  -moz-box-shadow: 5px 0 5px black;
+  box-shadow: 5px 0 5px black;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #000000), color-stop(98%, #232223));
+  background-image: -webkit-linear-gradient(top, #000000 0%, #232223 98%);
+  background-image: -moz-linear-gradient(top, #000000 0%, #232223 98%);
+  background-image: -o-linear-gradient(top, #000000 0%, #232223 98%);
+  background-image: linear-gradient(top, #000000 0%, #232223 98%);
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 500;
+}
+
+/* line 40, ../sass/app.scss */
+.page-title {
+  color: #93ae85;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* line 46, ../sass/app.scss */
+.media-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* line 53, ../sass/app.scss */
+.media {
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  background: #e6e6e6;
+  color: #1a1a1a;
+  display: flex;
+  flex: 1 1 200px;
+  flex-direction: column;
+  margin: 10px;
+  opacity: .8;
+  padding: 5px;
+}
+/* line 63, ../sass/app.scss */
+.media:hover {
+  -webkit-box-shadow: 2px 2px 5px #ff5f4b;
+  -moz-box-shadow: 2px 2px 5px #ff5f4b;
+  box-shadow: 2px 2px 5px #ff5f4b;
+  color: #050505;
+  opacity: 1;
+}
