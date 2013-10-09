@@ -91,11 +91,11 @@ a {
 
 /* line 93, ../sass/app.scss */
 .media {
-  -webkit-transition: all 0.5s linear;
-  -moz-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-  background: #fafafa;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background: rgba(255, 255, 255, 0.7);
   color: #1a1a1a;
   display: flex;
   flex: 1 1 200px;
@@ -109,39 +109,40 @@ a {
   -webkit-box-shadow: 2px 2px 5px #cc181e;
   -moz-box-shadow: 2px 2px 5px #cc181e;
   box-shadow: 2px 2px 5px #cc181e;
+  background: #fff;
   color: #050505;
   opacity: 1;
 }
 
-/* line 110, ../sass/app.scss */
+/* line 111, ../sass/app.scss */
 .media-details {
   margin: 0;
   padding: 0;
 }
 
-/* line 115, ../sass/app.scss */
+/* line 116, ../sass/app.scss */
 .media-detail {
   list-style: none;
   margin: 10px 0;
 }
 
-/* line 120, ../sass/app.scss */
+/* line 121, ../sass/app.scss */
 .media-link {
   color: blue;
 }
 
-/* line 124, ../sass/app.scss */
+/* line 125, ../sass/app.scss */
 .media-link:before {
   margin: 10px 10px 10px 0;
   vertical-align: -2px;
 }
 
-/* line 129, ../sass/app.scss */
+/* line 130, ../sass/app.scss */
 .media-link-tw:before {
   color: #3c93c9;
 }
 
-/* line 133, ../sass/app.scss */
+/* line 134, ../sass/app.scss */
 .media-link-yt:before {
   color: #cc181e;
 }
