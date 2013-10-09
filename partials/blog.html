@@ -1,9 +1,0 @@
-<h1>Blog</h1>
-
-<div class="blog media" ng-repeat="article in articles">
-  <div class="media-body">
-    <h4 class="media-heading"><a href="{{ article.id }}">{{article.title}}</a></h4>
-    <small>Posted {{article.date}}</small>
-    <div class="body" ng-bind-html-unsafe="article.body"></div>
-  </div>
-</div>
