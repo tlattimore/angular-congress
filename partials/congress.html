@@ -6,9 +6,9 @@
 	<div class="media" ng-repeat="member in members">
 	  <div class="media-component">
 	    <h2>{{member.person.name}}</h2>
-	  	<span class="media-detail">{{member.startdate}} - {{member.enddate}}</span>
-	    <span class="media-detail">{{member.person.twitterid}}</span>
-	    <span class="media-detail">{{member.person.youtubeid}}</span>
+	  	<span class="media-detail media-date"><strong>Term:</strong> <em>{{member.startdate}} - {{member.enddate}}</em></span>
+	    <span data-icon="&#x2605;" class="media-detail media-link">{{member.person.twitterid}}</span>
+	    <span data-icon="&#x25ba;" class="media-detail media-link">{{member.person.youtubeid}}</span>
 	  </div>
 	</div>
 </div>

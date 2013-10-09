@@ -1,6 +1,7 @@
 @import "compass";
 @import "breakpoint";
-@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+
+
 
 /**
  * Colors.
@@ -11,19 +12,55 @@ $orange: #e0b16b;
 $takemylove: #ff5f4b;
 $ruby: #92161e;
 
+/**
+ * Fonts.
+ */
+@font-face {
+	font-family: 'angular-congress';
+	src:url('../fonts/angular-congress.eot');
+	src:url('../fonts/angular-congress.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/angular-congress.woff') format('woff'),
+		url('../fonts/angular-congress.ttf') format('truetype'),
+		url('../fonts/angular-congress.svg#angular-congress') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700);
+
+
+/**
+ * Styles.
+ */
 html {
 	font-size: 100%;
 }
 
 body {
-	background: $navyblue;
-	font-family: 'Julius Sans One', sans-serif;
+	background: $orange;
+	font-family: 'Josefin Sans', sans-serif;
 	padding: 120px 0 0;
 }
 
 // Border box all the things!
 * {
 	box-sizing: border-box;
+}
+
+[data-icon]:before {
+	font-family: 'angular-congress';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+	font-size: 1.1em;
 }
 
 .toolbar {

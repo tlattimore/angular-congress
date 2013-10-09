@@ -1,25 +1,57 @@
-@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700);
 /**
  * Colors.
  */
-/* line 14, ../sass/app.scss */
+/**
+ * Fonts.
+ */
+@font-face {
+  font-family: 'angular-congress';
+  src: url("../fonts/angular-congress.eot");
+  src: url("../fonts/angular-congress.eot?#iefix") format("embedded-opentype"), url("../fonts/angular-congress.woff") format("woff"), url("../fonts/angular-congress.ttf") format("truetype"), url("../fonts/angular-congress.svg#angular-congress") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**
+ * Styles.
+ */
+/* line 35, ../sass/app.scss */
 html {
   font-size: 100%;
 }
 
-/* line 18, ../sass/app.scss */
+/* line 39, ../sass/app.scss */
 body {
-  background: #102e38;
-  font-family: 'Julius Sans One', sans-serif;
+  background: #e0b16b;
+  font-family: 'Josefin Sans', sans-serif;
   padding: 120px 0 0;
 }
 
-/* line 25, ../sass/app.scss */
+/* line 46, ../sass/app.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 29, ../sass/app.scss */
+/* line 50, ../sass/app.scss */
+[data-icon]:before {
+  font-family: 'angular-congress';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 62, ../sass/app.scss */
+h2 {
+  font-size: 1.1em;
+}
+
+/* line 66, ../sass/app.scss */
 .toolbar {
   -webkit-box-shadow: 5px 0 5px black;
   -moz-box-shadow: 5px 0 5px black;
@@ -37,14 +69,14 @@ body {
   z-index: 500;
 }
 
-/* line 40, ../sass/app.scss */
+/* line 77, ../sass/app.scss */
 .page-title {
   color: #93ae85;
   text-align: center;
   font-size: 1.5em;
 }
 
-/* line 46, ../sass/app.scss */
+/* line 83, ../sass/app.scss */
 .media-container {
   display: flex;
   flex-wrap: wrap;
@@ -52,7 +84,7 @@ body {
   justify-content: space-between;
 }
 
-/* line 53, ../sass/app.scss */
+/* line 90, ../sass/app.scss */
 .media {
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
@@ -67,7 +99,7 @@ body {
   opacity: .8;
   padding: 5px;
 }
-/* line 63, ../sass/app.scss */
+/* line 100, ../sass/app.scss */
 .media:hover {
   -webkit-box-shadow: 2px 2px 5px #ff5f4b;
   -moz-box-shadow: 2px 2px 5px #ff5f4b;
