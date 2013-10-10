@@ -38,7 +38,7 @@ html {
 body {
 	background: url(../img/pixel_weave.png) repeat;
 	font-family: 'Josefin Sans', sans-serif;
-	padding: 120px 0 0;
+	padding: 80px 0 0;
 }
 
 // Border box all the things!
@@ -79,26 +79,11 @@ a {
 	z-index: 500;
 }
 
-.info {
-	color: #fff;
-	top: 25px;
-	left: 25px;
-	position: absolute;
-}
-
 .info-box {
 	color: gray;
 	background: darken(#fff, 10%);
-  display: none;
   padding: 10px
 }
-
- .info:hover {
-  .info-box {
-    display: block
-	}
-}
-
 
 .page-title {
 	color: darken(#fff, 10%);
@@ -118,7 +103,7 @@ a {
 	background: rgba(#fff, .7);
   color: lighten(#000, 10%);
 	display: flex;
-	flex: 1 1 200px;
+	flex: 1 0 200px;
 	flex-direction: column;
 	margin: 10px;
 	opacity: .8;

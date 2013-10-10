@@ -3,7 +3,7 @@
 angular.module('congresInfo.controllers', [])
   .controller('CongressList', function($scope, $http, congressSettings) {
     $scope.members = [];
-    $http.jsonp(congressSettings.hostName + '/role?current=true&format=jsonp', {
+    $http.jsonp(congressSettings.hostName + '/role?current=true&limit=600&format=jsonp', {
       params: {
         callback: 'JSON_CALLBACK'
       }

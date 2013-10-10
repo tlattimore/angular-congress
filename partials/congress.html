@@ -1,5 +1,5 @@
 <div class="media-container">
-	<div class="media" ng-repeat="member in members">
+  <article class="media" ng-repeat="member in members">
 	  <div class="media-component">
 	    <h2>{{member.person.name}}</h2>
 	    <ul class="media-details">
@@ -8,5 +8,5 @@
 		    <li class="media-detail media-link" ng-show="member.person.youtubeid"><a class="media-link media-link-yt" href="https://www.youtube.com/user/{{member.person.youtubeid}}"  data-icon="&#x25ba;">{{member.person.youtubeid}}</a></li>
 	    </ul>
 	  </div>
-	</div>
+	</article>
 </div>

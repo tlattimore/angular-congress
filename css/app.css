@@ -25,7 +25,7 @@ html {
 body {
   background: url(../img/pixel_weave.png) repeat;
   font-family: 'Josefin Sans', sans-serif;
-  padding: 120px 0 0;
+  padding: 80px 0 0;
 }
 
 /* line 45, ../sass/app.scss */
@@ -77,34 +77,20 @@ a {
 }
 
 /* line 82, ../sass/app.scss */
-.info {
-  color: #fff;
-  top: 25px;
-  left: 25px;
-  position: absolute;
-}
-
-/* line 89, ../sass/app.scss */
 .info-box {
   color: gray;
   background: #e6e6e6;
-  display: none;
   padding: 10px;
 }
 
-/* line 97, ../sass/app.scss */
-.info:hover .info-box {
-  display: block;
-}
-
-/* line 103, ../sass/app.scss */
+/* line 88, ../sass/app.scss */
 .page-title {
   color: #e6e6e6;
   text-align: center;
   font-size: 1.5em;
 }
 
-/* line 109, ../sass/app.scss */
+/* line 94, ../sass/app.scss */
 .media-container {
   display: flex;
   flex-wrap: wrap;
@@ -112,7 +98,7 @@ a {
   justify-content: space-between;
 }
 
-/* line 116, ../sass/app.scss */
+/* line 101, ../sass/app.scss */
 .media {
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -121,13 +107,13 @@ a {
   background: rgba(255, 255, 255, 0.7);
   color: #1a1a1a;
   display: flex;
-  flex: 1 1 200px;
+  flex: 1 0 200px;
   flex-direction: column;
   margin: 10px;
   opacity: .8;
   padding: 5px;
 }
-/* line 126, ../sass/app.scss */
+/* line 111, ../sass/app.scss */
 .media:hover {
   -webkit-box-shadow: 2px 2px 5px #cc181e;
   -moz-box-shadow: 2px 2px 5px #cc181e;
@@ -137,30 +123,30 @@ a {
   opacity: 1;
 }
 
-/* line 134, ../sass/app.scss */
+/* line 119, ../sass/app.scss */
 .media-details {
   margin: 0;
   padding: 0;
 }
 
-/* line 139, ../sass/app.scss */
+/* line 124, ../sass/app.scss */
 .media-detail {
   list-style: none;
   margin: 10px 0;
 }
 
-/* line 144, ../sass/app.scss */
+/* line 129, ../sass/app.scss */
 .media-link:before {
   margin: 10px 10px 10px 0;
   vertical-align: -2px;
 }
 
-/* line 149, ../sass/app.scss */
+/* line 134, ../sass/app.scss */
 .media-link-tw:before {
   color: #3c93c9;
 }
 
-/* line 153, ../sass/app.scss */
+/* line 138, ../sass/app.scss */
 .media-link-yt:before {
   color: #cc181e;
 }
