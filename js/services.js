@@ -3,6 +3,6 @@
 angular.module('congresInfo.services', [])
   .factory('congressSettings', function($window) {
     return {
-    	hostName: 'http://www.govtrack.us/api/v2'
+    	hostName: 'https://www.govtrack.us/api/v2'
     };
   });
